@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <nav>
+        <img src="images/logo.svg" alt="" onclick="goToTop()">
+        <div class="navigation">
+            <ul id="navbar">
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="course.html">course</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <img src="images/user.png" alt="" class="user-pic" onclick="toggleMenu()">
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="images/user.png">
+                        <h3 id="user-name">User Name</h3>
+                    </div>
+                    <hr>
+                    <a href="#" class="sub-menu-link">
+                        <img src="images/profile.png">
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="images/setting.png">
+                        <p>Setting & Privacy</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="images/help.png">
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link" onclick="logout()">
+                        <img src="images/logout.png">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+            <img id="menu-btn" src="images/menu.png" alt="">
+        </div>
+    </nav>
+    <!--About Home-->
+    <section id="about-home">
+        <h2>About Technical Education!</h2>
+    </section>
+    <!--About Container-->
+    <section id="about-container">
+        <div class="about-img">
+            <img src="images/a.png" alt="">
+        </div>
+        <div class="about-text">
+            <h2>Welcome to TechEducation, Enhance your school with best online courses</h2>
+            <p>You can start or finish one of the popular courses in under a day -for free! Check out the list below ..
+                take the courses for free. </p>
+            <div class="about-fe">
+                <img src="images/fe1.png" alt="">
+                <div class="fe-text">
+                    <h5>400+ Courses</h5>
+                    <p>You can start or finish one of the popular courses in under a day</p>
+                </div>
+            </div>
+            <div class="about-fe">
+                <img src="images/fe2.png" alt="">
+                <div class="fe-text">
+                    <h5>lifetime Access</h5>
+                    <p>You can start or finish one of the popular courses in under a day</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--Features-->
+    <section id="features">
+        <h1>Awesome Features</h1>
+        <p>Plans</p>
+        <div class="fea-base">
+            <div class="fea-box">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Scholarship Facility</h3>
+                <p>One makes creepth,Man Bearig infr</p>
+            </div>
+            <div class="fea-box">
+                <i class="fas fa-file-certificate"></i>
+                <h3>Dell Online Courses</h3>
+                <p>One makes creepth,Man Bearig infr</p>
+            </div>
+            <div class="fea-box">
+                <i class="fas fa-award"></i>
+                <h3>Global Certification</h3>
+                <p>One makes creepth,Man Bearig infr</p>
+            </div>
+        </div>
+    </section>
+    <!--trust-->
+    <section id="trust">
+        <h1>Trusted By</h1>
+        <p>Plans</p>
+        <div class="trust-img">
+            <img src="images/trust (1).png" alt="">
+            <img src="images/trust (2).png" alt="">
+            <img src="images/trust (3).png" alt="">
+            <img src="images/trust (4).png" alt="">
+            <img src="images/trust (5).png" alt="">
+            <img src="images/trust (6).png" alt="">
+        </div>
+    </section>
+    <footer class="section-p1">
+
+        <div class="col">
+            <h3>Top Product</h3>
+            <a href="#">Manage Reputation</a>
+            <a href="#">Power Tools</a>
+            <a href="#">Manage Websites</a>
+            <a href="#">Marketing services</a>
+        </div>
+        <div class="col">
+            <h3>Guides</h3>
+            <a href="#">Research</a>
+            <a href="#">Experts</a>
+            <a href="#">Managed Websites</a>
+            <a href="#">Marketing services</a>
+        </div>
+        <div class="col">
+
+            <h3>Contacts</h3>
+            <p><strong>Address :</strong> Sukhwani Sepia</p>
+            <p><strong>Phone :</strong> +91 8652624890</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pintrest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col install">
+            <h3>Newsletter</h3>
+            <p>You can trust us,We can send promo offers!</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Your Email Address">
+                <a class="blue" href="#"><span></span>Subcribe</a>
+            </div>
+            <p>Secured Gateway Payments</p>
+            <img src="images/pay.png" alt="">
+        </div>
+        <div class="copyright">
+            <p>@ 2023,Tech2 etc TechEducation</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+
+</html>

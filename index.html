@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Education</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!--Navigation-->
+    <nav>
+        <img src="images/logo.svg" alt="" onclick="goToTop()">
+        <div class="navigation">
+            <ul id="navbar">
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="course.html">course</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <img src="images/user.png" alt="" class="user-pic" onclick="toggleMenu()">
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="images/user.png">
+                        <h3 id="user-name">User Name</h3>
+                    </div>
+                    <hr>
+                    <a href="#" class="sub-menu-link">
+                        <img src="images/profile.png">
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="images/setting.png">
+                        <p>Setting & Privacy</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="images/help.png">
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link" onclick="logout()">
+                        <img src="images/logout.png">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+            <img id="menu-btn" src="images/menu.png" alt="">
+        </div>
+    </nav>
+
+    <!--Logout Popup-->
+    <div class="user-popup" id="user-popup">
+        <!-- User details and logout button content here -->
+        <p>User Name</p>
+        <p>Email Address</p>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <!--Home-->
+    <section id="home">
+        <h2>Enhance Your Future With TechEducation</h2>
+        <p>Choose from over 210,000 online video courses with new additions published every month.
+            ake one of TechEducation’s range of courses and learn how to code using this incredibly useful language.
+            Its
+            simple syntax and readability makes perfect for Flask, Django, data science, and machine learning
+        </p>
+        <div class="banner-btn">
+            <a class="blue" href="#"><span></span>Learn More</a>
+            <a class="yellow" href="#"><span></span>Visit Courses</a>
+        </div>
+    </section>
+
+
+    <!--Features-->
+    <section id="features">
+        <h1>Awesome Features</h1>
+        <p>Plans</p>
+        <div class="fea-base">
+            <div class="fea-box">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Scholarship Facility</h3>
+                <p>One makes creepth,Man Bearig infr</p>
+            </div>
+            <div class="fea-box">
+                <i class="fas fa-file-certificate"></i>
+                <h3>Dell Online Courses</h3>
+                <p>One makes creepth,Man Bearig infr</p>
+            </div>
+            <div class="fea-box">
+                <i class="fas fa-award"></i>
+                <h3>Global Certification</h3>
+                <p>One makes creepth,Man Bearig infr</p>
+            </div>
+        </div>
+    </section>
+    <!--Course-->
+    <section id="course">
+        <h1>Online Courses</h1>
+        <p>Online Courses</p>
+        <div class="course-box">
+            <div class="courses" onclick="openVideoPage()">
+                <img src="images/c1.jpg" alt="">
+                <div class="details">
+                    <span>28/01/2023</span>
+                    <h6>javascript begineer courses</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(239)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    Free
+                </div>
+            </div>
+            <div class="courses">
+                <img src="images/c2.jpg" alt="">
+                <div class="details">
+                    <span>28/01/2023</span>
+                    <h6>javascript begineer courses</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(239)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    Free
+                </div>
+            </div>
+            <div class="courses">
+                <img src="images/c3.jpg" alt="">
+                <div class="details">
+                    <span>28/01/2023</span>
+                    <h6>javascript begineer courses</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(239)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    Free
+                </div>
+            </div>
+            <div class="courses">
+                <img src="images/c4.jpg" alt="">
+                <div class="details">
+                    <span>28/01/2023</span>
+                    <h6>javascript begineer courses</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(239)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    Free
+                </div>
+            </div>
+            <div class="courses">
+                <img src="images/c5.jpg" alt="">
+                <div class="details">
+                    <span>28/01/2023</span>
+                    <h6>javascript begineer courses</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(239)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    Free
+                </div>
+            </div>
+            <div class="courses">
+                <img src="images/c6.jpg" alt="">
+                <div class="details">
+                    <span>28/01/2023</span>
+                    <h6>javascript begineer courses</h6>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(239)</span>
+                    </div>
+                </div>
+                <div class="cost">
+                    Free
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="registration">
+        <div class="reminder">
+            <p>Get 100 online courses for free</p>
+            <h1>Register to get it</h1>
+            <div class="time">
+                <div class="date">
+                    18<br>Days
+                </div>
+                <div class="date">
+                    23<br>Hours
+                </div>
+                <div class="date">
+                    6<br>Minutes
+                </div>
+                <div class="date">
+                    58<br>Seconds
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <h3>Create Free Account Now!</h3>
+            <input type="text" placeholder="Name" name="" id="">
+            <input type="text" placeholder="Email Address" name="" id="">
+            <input type="text" placeholder="Phone Number" name="" id="">
+            <div class="banner-btn">
+                <a class="blue" href="#"><span></span>Submit Form</a>
+            </div>
+        </div>
+    </section>
+    <!--profile-->
+    <section id="experts">
+        <h1>Community experts</h1>
+        <p>Plans</p>
+        <div class="expert-box" id="expert-container">
+        </div>
+    </section>
+    <footer class="section-p1">
+        <div class="col">
+            <h3>Top Product</h3>
+            <a href="#">Manage Reputation</a>
+            <a href="#">Power Tools</a>
+            <a href="#">Manage Websites</a>
+            <a href="#">Marketing services</a>
+        </div>
+        <div class="col">
+            <h3>Guides</h3>
+            <a href="#">Research</a>
+            <a href="#">Experts</a>
+            <a href="#">Managed Websites</a>
+            <a href="#">Marketing services</a>
+        </div>
+        <div class="col">
+
+            <h3>Contacts</h3>
+            <p><strong>Address :</strong> Sukhwani Sepia</p>
+            <p><strong>Phone :</strong> +91 8652624890</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pintrest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col install">
+            <h3>Newsletter</h3>
+            <p>You can trust us,We can send promo offers!</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Your Email Address">
+                <a class="blue" href="#"><span></span>Subcribe</a>
+            </div>
+            <p>Secured Gateway Payments</p>
+            <img src="images/pay.png" alt="">
+        </div>
+        <div class="copyright">
+            <p>@ 2023,Tech2 etc TechEducation</p>
+        </div>
+    </footer>
+
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

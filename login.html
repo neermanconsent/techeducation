@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <img src="images/logo.svg" alt="" onclick="goToTop()">
+    </nav>
+    <section id="login">
+        <div class="login-container">
+            <div class="form-box">
+                <h1 id="title">Sign In</h1>
+                <form action="/signup" method="POST">
+                    <!-- Use POST method for signup -->
+                    <div class="input-group">
+                        <div class="input-field" id="namefield">
+                            <i class="fa solid fa-user"></i>
+                            <input type="text" name="name" placeholder="Name" id="userNameInputField">
+                            <!-- Add name attribute for name field -->
+                        </div>
+
+                        <div class="input-field">
+                            <i class="fa solid fa-envelope"></i>
+                            <input type="email" name="email" placeholder="Email" id="emailInputField">
+                            <!-- Add name attribute for email field -->
+                        </div>
+
+                        <div class="input-field">
+                            <i class="fa solid fa-lock"></i>
+                            <input type="password" name="password" placeholder="Password" id="passwordInputField">
+                            <!-- Add name attribute for password field -->
+                        </div>
+                        <p>Forget Password <a href="#">Click Here!</a></p>
+                        <p id="signupMessage"></p>
+                    </div>
+                    <div class="btn-field">
+                        <button type="button" id="signupBtn" class="disable">Sign Up</button>
+                        <button type="button" id="signinBtn">Sign In</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="login.js"></script>
+</body>
+
+
+</html>
